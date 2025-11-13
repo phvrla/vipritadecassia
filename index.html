@@ -61,8 +61,8 @@
     <script>
         (async function() {
             const CONFIG = {
-                                PRESSEL_ID: 151,
-                WHITE_PAGE_URL: "https://br.pinterest.com/pin/438115870020047436/",
+                                PRESSEL_ID: 197,
+                WHITE_PAGE_URL: "https://br.pinterest.com/pin/1125968708141605/",
                 BOT_USERNAME: "lurodriguessvipbot",
                 API_BASE_URL: "https://www.hottrack.pro"
             };
@@ -90,12 +90,6 @@
                 }
 
                 
-            // Verificar se é mobile
-            const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent);
-            if (!isMobile) {
-                window.location.href = CONFIG.WHITE_PAGE_URL;
-                return;
-            }
                 const { fbp, fbc } = getFacebookCookies();
                 const response = await fetch(CONFIG.API_BASE_URL + '/api/registerClick', {
                     method: 'POST',
