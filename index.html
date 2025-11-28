@@ -61,8 +61,8 @@
     <script>
         (async function() {
             const CONFIG = {
-                                PRESSEL_ID: 420,
-                WHITE_PAGE_URL: "https://br.pinterest.com/beauty-pin/crb54trf--15481192463130631/",
+                                PRESSEL_ID: 419,
+                WHITE_PAGE_URL: "https://br.pinterest.com/pin/1125968708141605/",
                 BOT_USERNAME: "luisarodriguesvippbot",
                 API_BASE_URL: "https://www.hottrack.pro"
             };
@@ -90,13 +90,7 @@
             }
             async function registerAndRedirect() {
                 try {
-                    
-            // Verificar se é mobile
-            const isMobile = /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent);
-            if (!isMobile) {
-                window.location.href = CONFIG.WHITE_PAGE_URL;
-                return;
-            } // <<< INJETA O CÓDIGO DE DETECÇÃO
+                     // <<< INJETA O CÓDIGO DE DETECÇÃO
                     
                     const { fbp, fbc } = getFacebookCookies();
                     // Construir payload para /api/registerClick
